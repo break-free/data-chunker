@@ -15,6 +15,24 @@ Current list of languages that can be chunked:
 === java_code.py
 * Contains functions to split java files into smaller chunks
 
+=== python_code.py
+* Contains functions to split python files into smaller chunks
+
+Usage:
+
+    code_root = "folder-path/"
+    file_list = get_file_list(code_path=code_root, file_extension="*.py")
+    chunks = python_code(file_list)
+
+=== vb_code.py
+* Contains functions to split vb files into smaller chunks
+
+Usage:
+
+    code_root = "folder-path/"
+    file_list = get_file_list(code_path=code_root, file_extension="*.vb")
+    chunks = vb_code(file_list)
+
 == Contributing
 
 The GitHub repository for this package is https://github.com/break-free/data-chunker.

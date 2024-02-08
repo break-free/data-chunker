@@ -8,7 +8,7 @@ def get_code_lines(file: Path) -> list:
     with open(file, "r") as r:
         return r.readlines()
 
-def get_file_list(code_path, file_extension: str = ".java"):
+def get_file_list(code_path, file_extension: str = "*.java"):
     file_list = []
 
     for root, dirs, files in os.walk(code_path):
